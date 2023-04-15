@@ -5,21 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- <script type="module" src="./main.js" defer></script> -->
   <title>Home</title>
 </head>
 <body>
+  <!-- <h1 id="title"></h1>
+  <p id="description"></p>
+  <button onclick="changeLanguage('en')">English</button>
+  <button onclick="changeLanguage('bg')">Български</button> -->
   <div id="container">
     <header>
       <div class="logo">
-        <img src="./public/pictures/logo/Branding.png" alt="logo" class="logo">
+        <img src="/pictures/logo/Branding.png" alt="logo" class="logo">
       </div>
       <nav>
-        <ul>
+        <ul id="navigation-list">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Pages</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li>
+            <a href="/products">Products</a>
+            <i class="fas fa-chevron-down"></i>
+            <ul id="products-drop-down">
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+              <li><a href="#">Product 3</a></li>
+              <li><a href="#">Product 4</a></li>
+            </ul>
+          </li>
+          <li><a href="/pages">Pages</a></li>
         </ul>
       </nav>
         <div class="icons">
@@ -33,62 +47,62 @@
     </header>
     <section class="header-content">
       <div class="img-content">
-        <img src="./public/pictures/content/Paste image.png" alt="header image">
+        <img src="/pictures/content/Paste image.png" alt="header image">
       </div>
       <section class="content">
-        <span>Ikigai</span>
-        <h1>Leather bags worth hugging</h1>
-        <p>Keep your everyday style chic and on-trend with our selection 20+ styles to choose from.</p>
+        <span class="content-span"></span>
+        <h1 class="content-heading"></h1>
+        <p class="content-paragraph"></p>
         <button>See Collection</button>
       </section>
     </section>
     <section id="logos">
       <div class="logos">
-        <img src="./public/pictures/content/nike.png" alt="">
+        <img src="/pictures/content/nike.png" alt="">
       </div>
       <div class="logos">
-        <img src="./public/pictures/content/hush.png" alt="">
+        <img src="/pictures/content/hush.png" alt="">
       </div>
       <div class="logos">
-        <img src="./public/pictures/content/puma.png" alt="">
+        <img src="/pictures/content/puma.png" alt="">
       </div>
       <div class="logos">
-        <img src="./public/pictures/content/shoei.png" alt="">
+        <img src="/pictures/content/shoei.png" alt="">
       </div>
       <div class="logos">
-        <img src="./public/pictures/content/marc.png" alt="">
+        <img src="/pictures/content/marc.png" alt="">
       </div>
       <div class="logos">
-        <img src="./public/pictures/content/supreme.png" alt="">
+        <img src="/pictures/content/supreme.png" alt="">
       </div>
     </section>
     <section id="banner">
       <div class="featured">
-        <img src="./public/pictures/content/1.png" alt="">
+        <img src="/pictures/content/1.png" alt="">
         <span>Featured</span>
         <h2>Nairo Series</h2>
       </div>
       <div class="featured">
-        <img src="./public/pictures/content/2.png" alt="">
+        <img src="/pictures/content/2.png" alt="">
         <span>New</span>
         <h2>Kensho Series</h2>
       </div>
       <div class="featured">
-        <img src="./public/pictures/content/3.png" alt="">
+        <img src="/pictures/content/3.png" alt="">
         <span>Handmade</span>
         <h2>Atarashi Series</h2>
       </div>
     </section>
     <section id="offers">
       <div class="offer-img">
-        <img src="./public/pictures/content/offers.png" alt="">
+        <img src="/pictures/content/offers.png" alt="">
       </div>
       <section id="offers-content">
         <span>Exclusive</span>
         <h1>50% Off</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, molestiae!</p>
         <h2>05d : 11h : 23m : 02s</h2>
-        <button class="shop-now-button">Shop Now</button>
+        <a href="/shop-button"><button class="shop-now-button">Shop Now</button></a>
       </section>
     </section>
     <section id="newsletter">
@@ -97,14 +111,16 @@
         <p>Enjoy big discounts and latest updates right to your inbox.</p>
         <div class="email-div">
           <img src="./public/pictures/content/email.png" alt="">
-          <input type="email" placeholder="Email" class="email">
-          <button class="sign-up">Signup</button>
+          <form id="email-form">
+            <input type="email" placeholder="Email" class="email" id="email" name="to">
+            <button class="sign-up" type="submit">Signup</button>
+          </form>
         </div>
       </div>
     </section>
     <section id="craftsmanship">
       <div class="background-image">
-        <img src="./public/pictures/content/background-image.png" alt="">
+        <img src="/pictures/content/background-image.png" alt="">
         <div class="craftsmanship-content">
           <h1>Exquisite<br>Craftsmanship</h1>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Quas qui illo eos est praesentium repudiandae.</p>
@@ -115,7 +131,7 @@
     <section id="footer">
       <div class="footer-content">
         <div class="footer-img">
-          <img src="./public/pictures/logo/Branding.png" alt="">
+          <img src="/pictures/logo/Branding.png" alt="">
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Rerum, repellendus!</p>
         <div class="footer-icons">
@@ -158,5 +174,45 @@
       </div>
     </section>
   </div>
+
+  <script>
+const emailForm = document.querySelector('#email-form');
+const emailInput = emailForm.querySelector('#email');
+
+emailForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  if (!emailInput.checkValidity()) {
+    alert('Please provide a valid email address.');
+    return;
+  }
+
+  const to = emailInput.value.trim();
+
+  try {
+    const response = await fetch('/subscribe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ to }),
+    });
+
+    if (response.ok) {
+      alert('Thank you for subscribing!');
+    } else {
+      const errorText = await response.text();
+      alert(`Failed to subscribe: ${errorText}`);
+    }
+  } catch (error) {
+    console.error('Error subscribing email:', error);
+    alert('Failed to subscribe.');
+  }
+
+  emailForm.reset();
+});
+</script>
+  </script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

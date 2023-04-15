@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +7,7 @@
   text-decoration: none;
   font-size: 16px;
   list-style-type: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 #container {
@@ -29,10 +32,32 @@ header {
 nav ul {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 nav li { 
-  margin: 0 10px;
+  margin: 0 20px;
+}
+
+nav li a {
+  color: black;
+  font-weight: 600;
+}
+
+.fas {
+  position: absolute;
+  left: 16.5rem;
+  top: .2rem;
+  cursor: pointer;
+}
+
+#products-drop-down {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background: red;
+  justify-content: center;
+  align-items: center;
 }
 
 .icons ul {
@@ -41,6 +66,14 @@ nav li {
 
 .icons li {
   margin: 0 10px;
+}
+
+.icons li a {
+  color: red;
+}
+
+.icons ul li:last-child a {
+  color: black;
 }
 
 .header-content {
@@ -57,7 +90,6 @@ nav li {
 }
 
 .content span {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 1rem;
   line-height: 26px;
@@ -65,7 +97,6 @@ nav li {
 }
 
 .content h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 3rem;
   line-height: 62px;
@@ -74,15 +105,14 @@ nav li {
 }
 
 .content p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 30px;
   color: #282828;
+  text-align: center;
 }
 
 .content button {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 32px;
@@ -120,7 +150,6 @@ nav li {
 }
 
 #banner span {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 26px;
@@ -130,7 +159,6 @@ nav li {
 }
 
 #banner h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 28px;
@@ -153,7 +181,6 @@ nav li {
 }
 
 #offers-content span {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 1rem;
   line-height: 26px;
@@ -161,7 +188,6 @@ nav li {
 }
 
 #offers-content h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 62px;
@@ -170,7 +196,6 @@ nav li {
 }
 
 #offers-content p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 30px;
@@ -178,7 +203,6 @@ nav li {
 }
 
 #offers-content h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 34px;
   line-height: 40px;
@@ -189,7 +213,6 @@ nav li {
 #offers-content button {
   padding: 10px 24px;
   background: #282828;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 32px;
@@ -208,7 +231,6 @@ nav li {
 }
 
 #newsletter h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 42px;
   line-height: 54px;
@@ -218,7 +240,6 @@ nav li {
 }
 
 #newsletter p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 30px;
@@ -248,7 +269,6 @@ nav li {
 #newsletter button {
   padding: 5px 30px;
   background: #282828;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 32px;
@@ -286,7 +306,6 @@ nav li {
 }
 
 .craftsmanship-content h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 42px;
   line-height: 54px;
@@ -297,7 +316,6 @@ nav li {
 }
 
 .craftsmanship-content p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 30px;
@@ -306,7 +324,6 @@ nav li {
 }
 
 .craftsmanship-content button {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 32px;
@@ -338,7 +355,6 @@ nav li {
 }
 
 .footer-content p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 26px;
@@ -353,6 +369,10 @@ nav li {
 
 .footer-icons li {
   padding: 2rem;
+}
+
+.footer-icons li a {
+  color: black;
 }
 
 .footer-content-2 {
@@ -372,6 +392,11 @@ nav li {
   padding: .5rem;
 }
 
+.product li a {
+  color: black;
+  font-weight: 500;
+}
+
 .information {
   display: flex;
   width: 100%;
@@ -382,6 +407,11 @@ nav li {
   padding: .5rem;
 }
 
+.information li a {
+  color: black;
+  font-weight: 500;
+}
+
 .support {
   display: flex;
   width: 100%;
@@ -390,6 +420,11 @@ nav li {
 
 .support li {
   padding: .5rem;
+}
+
+.support li a {
+  color: black;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1200px) {
