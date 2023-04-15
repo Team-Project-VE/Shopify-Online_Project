@@ -78,7 +78,7 @@ app.post('/subscribe', async (req, res) => {
       from: 'vborisovit98@gmail.com',
       to: to,
       subject: 'New subscriber',
-      text: 'Congratulations, you subscribed on our site successfully!',
+      text: 'Congratulations, you subscribed on our site successfully! We are happy :)',
     };
 
     await transporter.sendMail(mailOptions);
