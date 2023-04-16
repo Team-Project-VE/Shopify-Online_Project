@@ -53,11 +53,20 @@ nav li a {
 
 #products-drop-down {
   display: none;
-  flex-direction: column;
   position: absolute;
-  background: red;
-  justify-content: center;
-  align-items: center;
+  background: white;
+  list-style: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#products-drop-down li a {
+  display: block;
+  padding: 8px 18px;
+  color: black;
+}
+
+#products-drop-down li a:hover {
+  background: #f1f1f1;
 }
 
 .icons ul {
@@ -70,6 +79,26 @@ nav li a {
 
 .icons li a {
   color: red;
+}
+
+#login-form-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+
+#login-form-container form {
+  background: white;
+  padding: 16px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .icons ul li:last-child a {
