@@ -60,6 +60,7 @@ app.post('/subscribe', async (req, res) => {
     const subscribers = JSON.parse(subscribersData);
 
     if (subscribers.includes(to)) {
+      console.log('The user try to write already used email address');
       return res.status(400).send('Email address already subscribed');
     }
 
