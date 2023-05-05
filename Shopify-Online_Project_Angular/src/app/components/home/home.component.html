@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- <script type="module" src="./main.js" defer></script> -->
+  <title>Home</title>
+</head>
+<body>
+  <!-- <h1 id="title"></h1>
+  <p id="description"></p>
+  <button onclick="changeLanguage('en')">English</button>
+  <button onclick="changeLanguage('bg')">Български</button> -->
+  <div id="container">
+    <header>
+      <div class="logo">
+        <img src="/pictures/logo/Branding.png" alt="logo" class="logo">
+      </div>
+      <nav>
+        <ul id="navigation-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li>
+            <a href="/products">Products</a>
+            <i class="fas fa-chevron-down"></i>
+            <ul id="products-drop-down">
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+              <li><a href="#">Product 3</a></li>
+              <li><a href="#">Product 4</a></li>
+            </ul>
+          </li>
+          <li><a href="/pages">Pages</a></li>
+        </ul>
+      </nav>
+        <div class="icons">
+          <ul>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li><a href="#"><i class="fa fa-user" id="login-icon"></i></a></li>
+            <div id="login-form-container">
+              <form id="login-form">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <br>
+                <button type="submit">Login</button>
+              </form>
+            </div>
+          </ul>
+        </div>
+    </header>
+    <section class="header-content">
+      <div class="img-content">
+        <img src="/pictures/content/Paste image.png" alt="header image">
+      </div>
+      <section class="content">
+        <span class="content-span"></span>
+        <h1 class="content-heading"></h1>
+        <p class="content-paragraph"></p>
+        <button>See Collection</button>
+      </section>
+    </section>
+    <section id="logos">
+      <div class="logos">
+        <img src="/pictures/content/nike.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="/pictures/content/hush.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="/pictures/content/puma.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="/pictures/content/shoei.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="/pictures/content/marc.png" alt="">
+      </div>
+      <div class="logos">
+        <img src="/pictures/content/supreme.png" alt="">
+      </div>
+    </section>
+    <section id="banner">
+      <div class="featured">
+        <img src="/pictures/content/1.png" alt="">
+        <span>Featured</span>
+        <h2>Nairo Series</h2>
+      </div>
+      <div class="featured">
+        <img src="/pictures/content/2.png" alt="">
+        <span>New</span>
+        <h2>Kensho Series</h2>
+      </div>
+      <div class="featured">
+        <img src="/pictures/content/3.png" alt="">
+        <span>Handmade</span>
+        <h2>Atarashi Series</h2>
+      </div>
+    </section>
+    <section id="offers">
+      <div class="offer-img">
+        <img src="/pictures/content/offers.png" alt="">
+      </div>
+      <section id="offers-content">
+        <span>Exclusive</span>
+        <h1>50% Off</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, molestiae!</p>
+        <h2>05d : 11h : 23m : 02s</h2>
+        <a href="/shop-button"><button class="shop-now-button">Shop Now</button></a>
+      </section>
+    </section>
+    <section id="newsletter">
+      <div class="newsletter-content">
+        <h1>Join our newsletter</h1>
+        <p>Enjoy big discounts and latest updates right to your inbox.</p>
+        <div class="email-div">
+          <img src="./public/pictures/content/email.png" alt="">
+          <form id="email-form">
+            <input type="email" placeholder="Email" class="email" id="email" name="to">
+            <button class="sign-up" type="submit">Signup</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="craftsmanship">
+      <div class="background-image">
+        <img src="/pictures/content/background-image.png" alt="">
+        <div class="craftsmanship-content">
+          <h1>Exquisite<br>Craftsmanship</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Quas qui illo eos est praesentium repudiandae.</p>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer-content">
+        <div class="footer-img">
+          <img src="/pictures/logo/Branding.png" alt="">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Rerum, repellendus!</p>
+        <div class="footer-icons">
+          <ul>
+            <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-content-2">
+          <div class="product">
+            <ul>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Plugins</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="information">
+            <ul>
+              <li><a href="#">Information</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+          <div class="support">
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Updates</a></li>
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Startups</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
